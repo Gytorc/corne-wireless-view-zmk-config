@@ -37,10 +37,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB    &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+&trans     &trans  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &trans    &trans    &trans    &trans     &trans  &trans
+                           &kp LGUI  &trans  &kp SPACE    &kp RET   &trans    &kp RALT
             >;
         };
 
@@ -53,20 +53,22 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB    &kp EXCL    &kp AT      &kp HASH    &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &trans      &trans      &trans      &trans    &tog 3       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                                   &kp LGUI    &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
-        layer_3 {
+        Gaming+ {
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3  &kp N4    &kp N5       &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS
 &kp LSHFT  &kp Q   &kp W   &kp E   &kp R     &kp T        &kp TAB    &kp N4  &kp N5  &kp N6  &kp M   &kp L
 &kp LCTRL  &kp A   &kp S   &kp D   &kp F     &kp G        &kp BSLH   &kp N1  &kp N2  &kp N3  &kp O   &trans
-                           &kp X   &kp LALT  &kp SPACE    &kp ENTER  &mo 0   &trans
+                           &kp X   &kp LALT  &kp SPACE    &kp ENTER  &to 0   &trans
             >;
+
+            label = "Num Row + WASD";
         };
     };
 };
