@@ -71,10 +71,10 @@
 
         layer_4 {
             bindings = <
-&kp TAB         &kp Q   &kp W   &kp E   &kp R   &kp T     &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &kp Z   &kp X   &kp C   &kp V   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&kp TAB         &kp Q  &kp W  &kp E   &kp R   &kp T     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D   &kp F   &kp G     &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp Z  &kp X  &kp C   &kp V   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
